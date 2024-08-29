@@ -1,0 +1,41 @@
+body {
+    background-color: cyan;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    color: #1a5f7a;
+    font-weight: bold;
+}
+
+h2 {
+    color: #333;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #1a5f7a;
+    border-color: #1a5f7a;
+}
+
+.btn-primary:hover {
+    background-color: #134b61;
+    border-color: #134b61;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}
