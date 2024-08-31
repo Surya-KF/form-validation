@@ -1,41 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #ffffff;
+    --text-color: #333333;
+    --error-color: #ff0000;
+    --success-color: #00ff00;
+}
+
 body {
-    background-color: cyan;
-    font-family: 'Arial', sans-serif;
+    font-family: A"JetBrains Mono", monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    --primary-color: #4d94ff;
+    --secondary-color: #333333;
+    --third-color:rgb(2, 0, 0);
+    --text-color: #ffffff;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    size: 1rem;
+}
+
+.logo-container img {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#themeToggle {
+    width: 10px; /* Adjust width as needed */
+    padding: 8px 16px;
+    background-color: #4a4aff; /* Base color */
+    border: none;
+    border-radius: 5rem;
+    margin-top: 4.5ex;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for animations */
+    position: absolute; /* Positioning the button to the right */
+    right: 25px; /* Distance from the right edge */
+    top: 20px; /* Adjust as needed for vertical positioning */
+}
+
+/* Hover Effect */
+#themeToggle:hover {
+    background-color: #3333cc; /* Change color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+#moonIcon {
+    display: none;
+    width: 4rem; /* Adjust this value as needed */
+    height: 4rem; /* Adjust this value as needed */
+    border-radius: 50%; /* To keep it circular */
+    font-size: 1rem; 
+}
+
+#sunIcon {
+    display: none;
+    width: 4rem; /* Adjust this value as needed */
+    height: 4rem; /* Adjust this value as needed */
+    border-radius: 50%; /* To keep it circular */
+    font-size: 1rem; 
+}
+
+
+.dark-theme #moonIcon {
+    display: inline;
+}
+
+.dark-theme #sunIcon {
+    display: none;
+}
+
+/* Active Effect (Click) */
+#themeToggle:active {
+    transform: scale(0.95); /* Slightly decrease size on click */
+    background-color: #2a2a99; /* Darken color on click */
+}
+
+
+.company{
+    display: flex;
+    align-items: center;
+    border: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    flex-grow: 1; 
+    margin-right: 1rem;
 }
 
 .container {
-    max-width: 800px;
-    background-color: #ffffff;
-    border-radius: 10px;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--third-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    border-radius: 5px;
+    border-color: #0066cc;
 }
 
-h1 {
-    color: #1a5f7a;
-    font-weight: bold;
+.form-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
 }
 
 h2 {
-    color: #333;
+    text-align: center;
+    color: var(--primary-color);
 }
 
-.form-label {
-    font-weight: bold;
+.input-group {
+    margin-bottom: 1rem;
 }
 
-.btn-primary {
-    background-color: #1a5f7a;
-    border-color: #1a5f7a;
+label {
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
-.btn-primary:hover {
-    background-color: #134b61;
-    border-color: #134b61;
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
-    }
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.error {
+    color: var(--error-color);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.toggle-form {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.toggle-form a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.toggle-form a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 0.5rem;
 }
