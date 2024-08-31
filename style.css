@@ -39,11 +39,14 @@ body.dark-theme {
     display: flex;
     align-items: center;
     size: 1rem;
+    
 }
 
 .logo-container img {
     margin-right: 1rem;
     cursor: pointer;
+    border-radius: 50%;
+    border-style:double
 }
 
 #themeToggle {
