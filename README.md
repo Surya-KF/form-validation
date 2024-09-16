@@ -1,6 +1,19 @@
+To modify your `README.md` file as requested, here's how you can structure it by adding a **Table of Contents** and placing the **Project Overview** section correctly:
+
+```markdown
 # Form Validation for User Registration - State Bank of India
 
 This repository contains a simple **Form Validation** web application built using **HTML**, **CSS**, and **JavaScript**. The form is designed to validate user inputs for registration purposes at **State Bank of India (SBI)**. The form includes fields like name, email, phone number, password, and other personal details, with client-side validation to ensure data correctness before submission.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation and Setup](#installation-and-setup)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [License](#license)
+- [Contact](#contact)
 
 ## Project Overview
 
@@ -64,7 +77,9 @@ The website is live and can be accessed at the following URL:
 
 ## Screenshots
 
-![Form Preview](https://example.com/form_screenshot.png)
+![Login Page](assets/image/ui1.png)
+![Form Registration](assets/image/ui2.png)
+![Dual Theme Support](assets/image/ui3.png)
 
 ## License
 
@@ -77,4 +92,3 @@ For any inquiries or issues, feel free to reach out to the project maintainer:
 - **KF Surya**
 - **Email**: [kfsurya@example.com](mailto:kfsurya@example.com)
 - **Address**: Avinashi Road, Arasur, Coimbatore, Tamil Nadu, 641407
-
