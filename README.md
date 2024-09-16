@@ -89,5 +89,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries or issues, feel free to reach out to the project maintainer:
 
 - **KF Surya**
-- **Email**: [kfsurya@example.com](mailto:kfsurya@example.com)
+- **Email**: [kfsurya04@gmail.com](mailto:kfsurya04@gmail.com)
 - **Address**: Avinashi Road, Arasur, Coimbatore, Tamil Nadu, 641407
